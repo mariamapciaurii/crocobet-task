@@ -67,3 +67,16 @@ a{
     font-size: 12px;
     padding: 0 20px;
 } 
+
+
+h1{
+    font-size: 30px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+
+#users {
+    font-size: 20px;
+    color: white;
+}
