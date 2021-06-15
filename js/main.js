@@ -42,12 +42,10 @@ function renderPosts(posts, target) {
     var postsList = target.childNodes[1];
     cleanPosts();
     if(postsList){
-    postsList.style.display = 'block';
-
-} else {
-    var list = document.createElement("ul");
-
-     for (var i = 0; i < posts.length; i++) {
+        postsList.style.display = 'block';
+    } else {
+        var list = document.createElement("ul");
+        for (var i = 0; i < posts.length; i++) {
         var item = document.createElement("li");
         var liTitle = document.createElement("strong");
         var liBody = document.createElement("p");
@@ -59,7 +57,6 @@ function renderPosts(posts, target) {
         item.appendChild(liBody);
         list.appendChild(item);
     }
-
     target.appendChild(list);
 }
 

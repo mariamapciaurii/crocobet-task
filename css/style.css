@@ -45,15 +45,26 @@ a{
     overflow: auto;
     padding: 40px 0 40px 0;
     font-size: 0.9em;
+
+ 
 } 
 
 
 .cc-btn{
     background-color: #189541;
     color: #fff;
-   text-align: center;
-   cursor: pointer;
-    height: 1.875rem;
+    text-align: center;
+    cursor: pointer;
+	background: transparent;
+	border: 1px solid #189541;
+	height: 35px;
+	line-height: 35px;
+	padding: 0px 20px;
+	display: inline-block;
+	margin-bottom: 10px;
+}
+.cc-btn:hover{
+    background: #189541;
 }
 
 
@@ -66,7 +77,8 @@ a{
     flex-shrink: 0;
     font-size: 12px;
     padding: 0 20px;
-} 
+}
+ 
 
 
 h1{
@@ -79,7 +91,9 @@ h1{
 #users {
     font-size: 20px;
     color: white;
+    
 }
 .item {
     margin-bottom: 10px;
+
 }
