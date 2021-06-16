@@ -23,7 +23,7 @@ function appendData(data) {
 }
 
 function cleanPosts() {
-    var users = document.querySelectorAll('.item ul');
+    let users = document.querySelectorAll('.item div');
     for(var i = 0; i < users.length; i++) {
         if(users[i]) {
         users[i].style.display = 'none';
@@ -32,14 +32,14 @@ function cleanPosts() {
 }
 
 function getPosts(event) {
-    var userId = event.target.dataset.userId;
+    let userId = event.target.dataset.userId;
     fetch(`https://jsonplaceholder.typicode.com/posts?userId=${userId}`)
     .then(response => response.json())
     .then(json => renderPosts(json, event.target))
 }
 
 function renderPosts(posts, target) {
-    var postsList = target.childNodes[1];
+    let postsList = target.childNodes[1];
     cleanPosts();
     if(postsList){
         postsList.style.display = 'block';
@@ -59,7 +59,6 @@ function renderPosts(posts, target) {
     }
     target.appendChild(list);
 }
-
 }
 
 
